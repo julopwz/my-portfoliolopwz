@@ -22,18 +22,27 @@ const Hero = () => {
             <Container>
                 <Grid container spacing={2}>
                     <Grid size={{ xs: 12, md: 4 }} >
-                    <StyledImg src={Avatar} />
+                        <StyledImg src={Avatar} />
                     </Grid>
                     <Grid size={{ xs: 12, md: 8 }}>
-            
-                    <Typography color="primary" variant="h1" textAlign="center">Júlia Lopes Carvalho</Typography>
+
+                        <Typography color="primary" variant="h1" textAlign="center">Júlia Lopes Carvalho</Typography>
                         <Typography color="primary" variant="h2" textAlign="center">I'm a Librarian | Information Specialist | Front-end Developer</Typography>
-                        <Button>
+                        <Grid container  display={"flex"} justifyContent={"center"}>
+                            <Grid size={{ xs: 12, md: 4 }} display={"flex"} justifyContent={"center"}>
+                            <Button>
                             <FileDownloadIcon />
                             Download CV</Button>
-                        <Button>
+                            </Grid>
+                            <Grid size={{ xs: 12, md: 4 }} display={"flex"} justifyContent={"center"}>
+                            <Button>
                             <EmailIcon />
                             Contact me</Button>
+                            </Grid>
+                        </Grid>                    
+                        
+                    
+                     
                     </Grid>
                 </Grid>
             </Container>
