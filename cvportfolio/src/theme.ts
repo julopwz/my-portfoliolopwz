@@ -1,7 +1,7 @@
 import { green, purple } from '@mui/material/colors';
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 
-const theme = createTheme({
+let theme = createTheme({
     palette: {
       primary: {
         main: purple[500],
@@ -11,8 +11,22 @@ const theme = createTheme({
       },
     },
     typography: {
-        fontFamily: "monospace"
+        fontFamily: [
+            '"Helvetica Neue"',
+            // '-apple-system',
+            // 'BlinkMacSystemFont',
+            // '"Segoe UI"',
+            // 'Roboto',
+            // '"Helvetica Neue"',
+            // 'Arial',
+            // 'sans-serif',
+            // '"Apple Color Emoji"',
+            // '"Segoe UI Emoji"',
+            // '"Segoe UI Symbol"',
+        ].join(','),
     }
-  });
+});
 
-  export default theme;
+theme = responsiveFontSizes(theme);
+
+export default theme;
