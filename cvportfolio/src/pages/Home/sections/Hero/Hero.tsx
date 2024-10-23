@@ -19,7 +19,7 @@ function Hero() {
 
     const StyledImg = styled("img")(() => ({
         width: "80%",
-        borderRadius: "10%",
+        borderRadius: "80%",
         border: `1px solid ${theme.palette.primary.contrastText}`
     }));
 
@@ -39,11 +39,13 @@ function Hero() {
                     </Grid>
                     <Grid size={{ xs: 12, md: 7 }}>
 
-                        <Typography color="secondary" variant="h1" textAlign="center">Júlia Lopes Carvalho</Typography>
-                        <Typography color="secondary" variant="h2" textAlign="center">I'm a Librarian | Information Specialist | Front-end Developer</Typography>
-                        <Grid container display={"flex"} justifyContent={"center"} spacing={3}>
+                        <Typography color="secondary" variant="h2" textAlign="center" margin={"30px"}>Júlia Lopes Carvalho</Typography>
+                        <Typography color="secondary" variant="h3" textAlign="center">I'm a Librarian </Typography>
+                        <Typography color="secondary" variant="h4" textAlign="center"> Information Specialist </Typography>
+                        <Typography color="secondary" variant="h4" textAlign="center"> & Front-end Developer</Typography>
+                        <Grid container display={"flex"} justifyContent={"center"} spacing={3} marginTop={"40px"}>
                             <Grid size={{ xs: 12, md: 4 }} display={"flex"} justifyContent={"center"}>
-                                <StyledButton>
+                                <StyledButton onClick = {() => console.log("downlload")}> 
                                     <FileDownloadIcon />
                                     <Typography>
                                         Download CV
@@ -51,7 +53,7 @@ function Hero() {
                                 </StyledButton>
                             </Grid>
                             <Grid size={{ xs: 12, md: 4 }} display={"flex"} justifyContent={"center"}>
-                                <StyledButton>
+                                <StyledButton onClick = {() => console.log("downlload")}>
                                     <EmailIcon />
                                     <Typography>
                                         Contact me
