@@ -61,9 +61,6 @@ function Hero() {
                                 </StyledButton>
                             </Grid>
                         </Grid>
-
-
-
                     </Grid>
                 </Grid>
             </Container>
